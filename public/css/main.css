@@ -1,0 +1,95 @@
+html {
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+body.show-spinner > main {
+    overflow: hidden !important;
+}
+
+/* Hide everything under body tag */
+body.show-spinner > * {
+    opacity: 0;
+}
+
+/* Spinner */
+body.show-spinner::after {
+    content: " ";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border-top-color: rgba(0, 0, 0, 0.3);
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    position: fixed;
+    z-index: 1;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+small,
+.small {
+    font-size: 14px;
+}
+
+.select2-container--bootstrap .select2-results__option[aria-selected="true"] {
+    background: #c7c7c7;
+    color: #000000;
+}
+
+.modal-backdrop.show {
+    opacity: 0.5 !important;
+}
+
+.badge {
+    font-size: 14px;
+}
+.listing-card-container .listing-desc,
+.listing-card-container .listing-heading {
+    height: auto;
+}
+
+.bg-grey {
+    background-color: #d2d2d2;
+}
+
+.error {
+    color: #c43d4b;
+}
+.logo {
+    width: 150px;
+    height: 65px;
+    background-size: contain;
+}
+.logo-single {
+    width: 215px;
+    height: 107px;
+    margin-bottom: 15px;
+    background-size: contain;
+}
+
+.menu .main-menu ul li span.badge {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
