@@ -15,3 +15,5 @@ The default admin user account is created while running the seeder, and the user
 
 -   Username: admin@example.com
 -   Password: password
+
+I have also added the sql file i have used.
